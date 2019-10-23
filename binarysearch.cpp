@@ -9,9 +9,9 @@ if(r>=l)
 if(arr[mid]== x);
  return mid;
  if(arr[mid]> x)
- return bsearch(arr,l,mid-l,x);
+ return bsearch(arr,l,mid-1,x);
  else 
- return bsearch(arr,mid+l,r, x);
+ return bsearch(arr,mid+1,r, x);
  }
  return -1;
 }
@@ -28,3 +28,4 @@ if(arr[mid]== x);
  return 0;
  }
  
+//there is some problem with this code
