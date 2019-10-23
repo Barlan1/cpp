@@ -8,7 +8,7 @@ if(r>=l)
 {
 if(arr[mid]== x);
  return mid;
- if(mid< x)
+ if(arr[mid]> x)
  return bsearch(arr,l,mid-l,x);
  else 
  return bsearch(arr,mid+l,r, x);
