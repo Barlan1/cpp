@@ -6,7 +6,7 @@ int bsearch(int arr[],int l, int r, int x)
 int mid = l+(r-l)/2;
 if(r>=l)
 {
-if(mid== x);
+if(arr[mid]== x);
  return mid;
  if(mid< x)
  return bsearch(arr,l,mid-l,x);
