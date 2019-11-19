@@ -9,15 +9,15 @@ float area( int x1, int y1, int x2, int y2, int x3, int y3)
 }
 bool isInside(int x1, int y1, int x2, int y2, int x3, int y3,int x4,int y4,int x,int y )
  {
-  float A= area(x1,y1,x2,y2,x3,y3)+
-   area(x1,y1,x4,y4,x3,y3);
+  float A1= area(x1,y1,x2,y2,x3,y3);
+   float A2= area(x1,y1,x4,y4,x3,y3);
   
  float T1= area(x1,y1,x2,y2,x,y);
  float T2= area(x2,y2,x3,y3,x,y);
  float T3= area(x3,y3,x4,y4,x,y);
  float T4= area(x4,y4,x1,y1,x,y);
 
-return ( A == T1+T2+T3+T4);
+return ( A1+A2 == T1+T2+T3+T4);
 }
  int main()
 {
